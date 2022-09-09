@@ -1,0 +1,28 @@
+state = {
+ 'невада': 'NV',
+ 'Мичиган': 'MI',
+ 'Флорида': 'FL',
+ 'Техас': '	TX'
+ }
+city = {
+ 'NV': 'Las Vegas',
+ 'МI': 'Detroit'
+}
+city['FL'] = 'St. Petersburg'
+city['TX'] = 'Arlington'
+print ( '_' * 33)
+print ( " в штате NV есть город ", city['NV'])
+print ( " в штате TX есть город ", city['TX'])
+print ( '_' * 43)
+print ("в штате Флорида есть город: ", city[state['Флорида']])
+print ('_' * 43)
+for dsv, abbrev in list(state.items()):
+    print(f"{dsv} в сокращение {abbrev}")
+print('_' * 35)
+for abbrev, tmp in list(city.items()):
+     print(f"B штате {abbrev} есть город {tmp}")
+print('_' * 35)
+for tmp, abbrev in list(state.items()):
+     print(f"B штате {tmp} В сокращение {abbrev}")
+     print(f"есть город {city[abbrev]}")
+print('-' * 10)
