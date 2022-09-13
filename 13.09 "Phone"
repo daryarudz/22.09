@@ -1,0 +1,24 @@
+phoneGroupe = {
+    "Honor8x" : {
+        "displey" : 6.7,
+        "RAM" : 64,
+        "OC" : "Android 11",
+        "proizvod" : "Huawei"
+    },
+    "iphoneX" : {
+        "displey" : 5.8,
+        "RAM" : 128,
+        "OC" : "iOS 12",
+        "proizvod" : "Apple"
+    },
+    "Honor20s" : {
+        "displey" : 5.3,
+        "RAM" : 64,
+        "OC" : "Android 12",
+        "proizvod" : "Huawei"
+    }
+}
+print(phoneGroupe.get("Huawei", "Honor8x, Honor20s"))
+print(phoneGroupe.get("128", "iphoneX"))
+for i in sorted (phoneGroupe.items()):
+    print(i)
