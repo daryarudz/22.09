@@ -1,0 +1,8 @@
+tmp = [170, 175, 168, 172, 161]
+x = int(input())
+uwu = len(tmp)+1   //чтобы петя встал последним
+for i in range(len(tmp)):
+    if x>tmp[i]:
+        uwu=i+1
+        break
+print(uwu)
