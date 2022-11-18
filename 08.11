@@ -1,0 +1,23 @@
+class Fruits:
+    def __init__(self, fruct, price, massa):
+        self.fruct = fruct
+        self.price = price 
+        self.massa = massa
+
+    def tmp(self):
+        print(f"fruct: {self.fruct} price: {self.price} massa: {self.massa}")
+    
+    def summa(self):
+        print(f"Цена за {self.massa} кг {self.price * self.massa}")
+
+a = Fruits("Banan", 50, 3)
+a.tmp()
+a.summa()
+
+b = Fruits("Orange", 35, 1)
+b.tmp()
+b.summa()
+
+c = Fruits("Mango", 150, 2)
+c.tmp()
+c.summa()
