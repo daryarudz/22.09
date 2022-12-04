@@ -1,0 +1,41 @@
+class Corzina:
+    capitalOldPeople = 10000
+    capitalDeti = 2000
+    count = 0
+    listD = ['сырок', 'кола', 'чипсы']
+    listOP = ['говядина', 'картошка', 'сыр', 'помидоры', 'капуста']
+    
+    def __init__(self, name, id, price, ves, age):
+        self._name = name
+        self.id = id
+        self.price = price
+        self.ves = ves
+        self.age = age
+        Corzina.count = Corzina.count + 1
+          
+    def deti(self):
+        print(f"Вы совершили покупку на стоимость: {self.price * self.ves} рублей")
+        print("Капитал: " + str(Corzina.capitalDeti))
+        print("Банк: " + str(Corzina.capitalDeti - self.price * self.ves))
+        print("в корзине: " + str(Corzina.listD))
+        return self._name  
+
+    def OldPeople(self):
+        print(f"Вы совершили покупку на стоимость: {self.price * self.ves} рублей")
+        print("Капитал: " + str(Corzina.capitalOldPeople))
+        print("Банк: " + str(Corzina.capitalOldPeople - self.price * self.ves))
+        print("в корзине: " + str(Corzina.listOP))
+        return self._name
+       
+    def info(self):
+        print(self._name)
+        print("Ид номер: " + str(self.id))
+        print("Возраст: " + str(self.age))
+
+b = Corzina("Категория: Deti", 1, 23, 2, 12)
+b.deti()
+b.info()
+print("━╤デ╦︻(▀̿̿Ĺ̯̿̿▀̿ ̿)")
+c = Corzina("Категория: OldPeople", 2, 60, 4, 67)
+c.OldPeople()
+c.info()
