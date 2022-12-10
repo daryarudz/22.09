@@ -1,0 +1,32 @@
+class Person:
+    def __init__(self, name):
+        self.name = name
+        self.age = 19
+        self.weight = 157
+    def displey_info(self):
+        print(f"Name: {self.name} age: {self.age} weight: {self.weight}")
+a = Person("Dasha")
+print(a.name)
+print(a.age)
+print(a.weight)
+a.subject = "program"
+print(a.subject)
+a.displey_info()
+
+print("_________________________________________________")
+
+class Person:
+    def __init__(self,name):
+        self.name = name
+        self.age = 39
+        self.weight = 187
+    def displey_info(self):
+        print(f"Name: {self.name} age: {self.age} weight: {self.weight}")
+b = Person("Lenka")
+print(b.name)
+print(b.age)
+b.weight = 187
+print(b.weight)
+b.subject = "alcash"
+print(b.subject)
+b.displey_info()
