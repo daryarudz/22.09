@@ -1,0 +1,33 @@
+class Person:
+    the_weight = float(input("weight: "))
+    the_ves = float(input("ves: "))
+    theimt = the_weight / the_ves
+    
+    def __init__(self, name):
+        self.name = name
+        self.age = 19
+        self.weight = 144
+        self.ves = 44
+        
+    def displey_info(self):
+        print(f"Name: {self.name} age: {self.age} weight: {self.weight} ves: {self.ves}")
+        
+    def Ves(self, the_weight, the_ves, theimt):
+        if theimt <= 18.5:  
+            print("недостаточный вес") 
+            print(theimt)
+        elif theimt <= 24.9:  
+            print("норм")  
+        elif theimt <= 29.9:  
+            the_print("избыточный вес")  
+        else:  
+            print("ожирение") 
+        
+a = Person("Dasha")
+print(a.name)
+print(a.age)
+print(a.weight)
+a.subject = "program"
+print(a.subject)
+a.displey_info()
+a.Ves(157, 44, 17)
