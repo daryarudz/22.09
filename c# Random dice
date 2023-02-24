@@ -1,0 +1,21 @@
+  static void Main() {
+      
+        Random numberRam = new Random();
+        int cube1 = 0;
+        int cube2 = 1;
+        int count = 0;
+        
+        Console.WriteLine("Нажмите Enter чтобы бросить игральные кости");
+        
+        while (cube1 != cube2){
+            Console.ReadKey();
+            cube1 = numberRam.Next(1, 7);
+            cube2 = numberRam.Next(1, 7);
+            Console.WriteLine("Кость 1: " + cube1);
+            Console.WriteLine("Кость 2: " + cube2);
+            count++;
+        }
+        
+        Console.WriteLine("Использовано попыток: " + count);
+  }
+}
